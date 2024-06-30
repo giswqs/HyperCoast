@@ -498,6 +498,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#login-to-earthdata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Login to Earthdata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-for-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search for datasets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-for-data-by-short-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search for data by short name
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#search-for-pace-data" class="md-nav__link">
     <span class="md-ellipsis">
       Search for PACE data
@@ -1044,6 +1071,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#login-to-earthdata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Login to Earthdata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-for-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search for datasets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-for-data-by-short-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search for data by short name
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#search-for-pace-data" class="md-nav__link">
     <span class="md-ellipsis">
       Search for PACE data
@@ -1564,7 +1618,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><a href="https://colab.research.google.com/github/opengeos/HyperCoast/blob/main/docs/examples/search_data.ipynb"><img alt="image" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
-<h1 id="search-and-download-nasa-hyperspectral-data-with-hypercoast">Search and download NASA hyperspectral data with HyperCoast<a class="anchor-link" href="#search-and-download-nasa-hyperspectral-data-with-hypercoast">¶</a></h1><p>This notebook demonstrates how to search and download NASA hyperspectral data (e.g., <a href="https://earth.jpl.nasa.gov/emit">EMIT</a>, <a href="https://pace.gsfc.nasa.gov">PACE</a>) and <a href="https://ecostress.jpl.nasa.gov/">ECOSTRESS</a> temperature data with HyperCoast.</p>
+<h1 id="search-and-download-nasa-hyperspectral-data-with-hypercoast">Search and download NASA hyperspectral data with HyperCoast<a class="anchor-link" href="#search-and-download-nasa-hyperspectral-data-with-hypercoast">¶</a></h1><p>This notebook demonstrates how to search and download NASA hyperspectral data (e.g., <a href="https://earth.jpl.nasa.gov/emit">EMIT</a>, <a href="https://pace.gsfc.nasa.gov">PACE</a>) and <a href="https://ecostress.jpl.nasa.gov/">ECOSTRESS</a> temperature data with HyperCoast. Part of the source code is adapted from the NASA OB.DAAC tutorial - <a href="https://oceancolor.gsfc.nasa.gov/resources/docs/tutorials/notebooks/oci_data_access/">Access Data from the Ocean Color Instrument (OCI)</a>. Credits to the NASA OB.DAAC team.</p>
 </div>
 </div>
 </div>
@@ -1640,7 +1694,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="search-for-pace-data">Search for PACE data<a class="anchor-link" href="#search-for-pace-data">¶</a></h2>
+<h2 id="login-to-earthdata">Login to Earthdata<a class="anchor-link" href="#login-to-earthdata">¶</a></h2><p>To download and access the data, you will need to create an Earthdata login. You can register for an account at <a href="https://urs.earthdata.nasa.gov/">urs.earthdata.nasa.gov</a>.</p>
 </div>
 </div>
 </div>
@@ -1671,6 +1725,17 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="search-for-datasets">Search for datasets<a class="anchor-link" href="#search-for-datasets">¶</a></h2><p>Collections on NASA Earthdata are discovered with the search_datasets function, which accepts an instrument filter as an easy way to get started. Each of the items in the list of collections returned has a "short-name".</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -1690,19 +1755,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">results</span><span class="p">,</span> <span class="n">gdf</span> <span class="o">=</span> <span class="n">hypercoast</span><span class="o">.</span><span class="n">search_pace</span><span class="p">(</span>
-    <span class="n">bounding_box</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">83</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="o">-</span><span class="mi">81</span><span class="p">,</span> <span class="mi">28</span><span class="p">),</span>
-    <span class="n">temporal</span><span class="o">=</span><span class="p">(</span><span class="s2">"2024-05-10"</span><span class="p">,</span> <span class="s2">"2024-05-16"</span><span class="p">),</span>
-    <span class="n">count</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>  <span class="c1"># use -1 to return all datasets</span>
-    <span class="n">return_gdf</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-<span class="p">)</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">hypercoast</span><span class="o">.</span><span class="n">search_datasets</span><span class="p">(</span><span class="n">instrument</span><span class="o">=</span><span class="s2">"oci"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-4">results, gdf = hypercoast.search_pace(
-    bounding_box=(-83, 25, -81, 28),
-    temporal=("2024-05-10", "2024-05-16"),
-    count=10,  # use -1 to return all datasets
-    return_gdf=True,
-)</div>
+<div class="clipboard-copy-txt" id="cell-4">results = hypercoast.search_datasets(instrument="oci")</div>
 </div>
 </div>
 </div>
@@ -1727,9 +1782,23 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gdf</span><span class="o">.</span><span class="n">explore</span><span class="p">()</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">datasets</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="n">summary</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+    <span class="n">short_name</span> <span class="o">=</span> <span class="n">summary</span><span class="p">[</span><span class="s2">"short-name"</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">short_name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">datasets</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">short_name</span><span class="p">)</span>
+    <span class="n">datasets</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">short_name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">)</span><span class="si">}</span><span class="s2"> unique datasets"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-5">gdf.explore()</div>
+<div class="clipboard-copy-txt" id="cell-5">datasets = set()
+for item in results:
+    summary = item.summary()
+    short_name = summary["short-name"]
+    if short_name not in datasets:
+        print(short_name)
+    datasets.add(short_name)
+print(f"\nFound {len(datasets)} unique datasets")</div>
 </div>
 </div>
 </div>
@@ -1742,18 +1811,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="" src="https://i.imgur.com/3V5ozL4.png"/></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="download-pace-data">Download PACE data<a class="anchor-link" href="#download-pace-data">¶</a></h2><p>Download the first 2 files</p>
+<h2 id="search-for-data-by-short-name">Search for data by short name<a class="anchor-link" href="#search-for-data-by-short-name">¶</a></h2><p>Next, we use the <code>search_nasa_data</code> function to find granules within a collection. Let's use the <code>short_name</code> for the PACE/OCI Level-2 data product for bio-optical and biogeochemical properties.</p>
 </div>
 </div>
 </div>
@@ -1776,9 +1834,15 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">hypercoast</span><span class="o">.</span><span class="n">download_pace</span><span class="p">(</span><span class="n">results</span><span class="p">[:</span><span class="mi">2</span><span class="p">],</span> <span class="n">out_dir</span><span class="o">=</span><span class="s2">"data"</span><span class="p">)</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">hypercoast</span><span class="o">.</span><span class="n">search_nasa_data</span><span class="p">(</span>
+    <span class="n">short_name</span><span class="o">=</span><span class="s2">"PACE_OCI_L2_BGC_NRT"</span><span class="p">,</span>
+    <span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-6">hypercoast.download_pace(results[:2], out_dir="data")</div>
+<div class="clipboard-copy-txt" id="cell-6">results = hypercoast.search_nasa_data(
+    short_name="PACE_OCI_L2_BGC_NRT",
+    count=1,
+)</div>
 </div>
 </div>
 </div>
@@ -1791,7 +1855,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="search-for-emit-data">Search for EMIT data<a class="anchor-link" href="#search-for-emit-data">¶</a></h2>
+<p>We can refine our search by passing more parameters that describe the spatiotemporal domain of our use case. Here, we use the temporal parameter to request a date range and the bounding_box parameter to request granules that intersect with a bounding box. We can even provide a cloud_cover threshold to limit files that have a lower percetnage of cloud cover. We do not provide a count, so we'll get all granules that satisfy the constraints.</p>
 </div>
 </div>
 </div>
@@ -1814,21 +1878,42 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">results</span><span class="p">,</span> <span class="n">gdf</span> <span class="o">=</span> <span class="n">hypercoast</span><span class="o">.</span><span class="n">search_emit</span><span class="p">(</span>
-    <span class="n">bounding_box</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">83</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="o">-</span><span class="mi">81</span><span class="p">,</span> <span class="mi">28</span><span class="p">),</span>
-    <span class="n">temporal</span><span class="o">=</span><span class="p">(</span><span class="s2">"2024-04-01"</span><span class="p">,</span> <span class="s2">"2024-05-16"</span><span class="p">),</span>
-    <span class="n">count</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>  <span class="c1"># use -1 to return all datasets</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">tspan</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"2024-04-01"</span><span class="p">,</span> <span class="s2">"2024-04-16"</span><span class="p">)</span>
+<span class="n">bbox</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">76.75</span><span class="p">,</span> <span class="mf">36.97</span><span class="p">,</span> <span class="o">-</span><span class="mf">75.74</span><span class="p">,</span> <span class="mf">39.01</span><span class="p">)</span>
+<span class="n">clouds</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+
+<span class="n">results</span><span class="p">,</span> <span class="n">gdf</span> <span class="o">=</span> <span class="n">hypercoast</span><span class="o">.</span><span class="n">search_nasa_data</span><span class="p">(</span>
+    <span class="n">short_name</span><span class="o">=</span><span class="s2">"PACE_OCI_L2_BGC_NRT"</span><span class="p">,</span>
+    <span class="n">temporal</span><span class="o">=</span><span class="n">tspan</span><span class="p">,</span>
+    <span class="n">bounding_box</span><span class="o">=</span><span class="n">bbox</span><span class="p">,</span>
+    <span class="n">cloud_cover</span><span class="o">=</span><span class="n">clouds</span><span class="p">,</span>
     <span class="n">return_gdf</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-7">results, gdf = hypercoast.search_emit(
-    bounding_box=(-83, 25, -81, 28),
-    temporal=("2024-04-01", "2024-05-16"),
-    count=10,  # use -1 to return all datasets
+<div class="clipboard-copy-txt" id="cell-7">tspan = ("2024-04-01", "2024-04-16")
+bbox = (-76.75, 36.97, -75.74, 39.01)
+clouds = (0, 50)
+
+results, gdf = hypercoast.search_nasa_data(
+    short_name="PACE_OCI_L2_BGC_NRT",
+    temporal=tspan,
+    bounding_box=bbox,
+    cloud_cover=clouds,
     return_gdf=True,
 )</div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Display the footprints of the granules that match the search criteria.</p>
 </div>
 </div>
 </div>
@@ -1866,6 +1951,308 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Displaying a single result shows a direct download link: try it! The link will download the granule to your local machine, which may or may not be what you want to do. Even if you are running the notebook on a remote host, this download link will open a new browser tab or window and offer to save a file to your local machine. If you are running the notebook locally, this may be of use.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-9">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-9">results[0]</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We can also download all the results with one command.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-10">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">hypercoast</span><span class="o">.</span><span class="n">download_nasa_data</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">out_dir</span><span class="o">=</span><span class="s2">"data"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-10">hypercoast.download_nasa_data(results, out_dir="data")</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="search-for-pace-data">Search for PACE data<a class="anchor-link" href="#search-for-pace-data">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-11">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">hypercoast</span><span class="o">.</span><span class="n">nasa_earth_login</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-11">hypercoast.nasa_earth_login()</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-12">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">results</span><span class="p">,</span> <span class="n">gdf</span> <span class="o">=</span> <span class="n">hypercoast</span><span class="o">.</span><span class="n">search_pace</span><span class="p">(</span>
+    <span class="n">bounding_box</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">83</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="o">-</span><span class="mi">81</span><span class="p">,</span> <span class="mi">28</span><span class="p">),</span>
+    <span class="n">temporal</span><span class="o">=</span><span class="p">(</span><span class="s2">"2024-05-10"</span><span class="p">,</span> <span class="s2">"2024-05-16"</span><span class="p">),</span>
+    <span class="n">count</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>  <span class="c1"># use -1 to return all datasets</span>
+    <span class="n">return_gdf</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-12">results, gdf = hypercoast.search_pace(
+    bounding_box=(-83, 25, -81, 28),
+    temporal=("2024-05-10", "2024-05-16"),
+    count=10,  # use -1 to return all datasets
+    return_gdf=True,
+)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-13">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gdf</span><span class="o">.</span><span class="n">explore</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-13">gdf.explore()</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img alt="" src="https://i.imgur.com/3V5ozL4.png"/></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="download-pace-data">Download PACE data<a class="anchor-link" href="#download-pace-data">¶</a></h2><p>Download the first 2 files</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-14">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">hypercoast</span><span class="o">.</span><span class="n">download_pace</span><span class="p">(</span><span class="n">results</span><span class="p">[:</span><span class="mi">2</span><span class="p">],</span> <span class="n">out_dir</span><span class="o">=</span><span class="s2">"data"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-14">hypercoast.download_pace(results[:2], out_dir="data")</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="search-for-emit-data">Search for EMIT data<a class="anchor-link" href="#search-for-emit-data">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-15">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">results</span><span class="p">,</span> <span class="n">gdf</span> <span class="o">=</span> <span class="n">hypercoast</span><span class="o">.</span><span class="n">search_emit</span><span class="p">(</span>
+    <span class="n">bounding_box</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">83</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="o">-</span><span class="mi">81</span><span class="p">,</span> <span class="mi">28</span><span class="p">),</span>
+    <span class="n">temporal</span><span class="o">=</span><span class="p">(</span><span class="s2">"2024-04-01"</span><span class="p">,</span> <span class="s2">"2024-05-16"</span><span class="p">),</span>
+    <span class="n">count</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>  <span class="c1"># use -1 to return all datasets</span>
+    <span class="n">return_gdf</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-15">results, gdf = hypercoast.search_emit(
+    bounding_box=(-83, 25, -81, 28),
+    temporal=("2024-04-01", "2024-05-16"),
+    count=10,  # use -1 to return all datasets
+    return_gdf=True,
+)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-16">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gdf</span><span class="o">.</span><span class="n">explore</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-16">gdf.explore()</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><img alt="" src="https://i.imgur.com/57sf4QV.png"/></p>
 </div>
 </div>
@@ -1890,7 +2277,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-9">
+<clipboard-copy for="cell-17">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -1902,7 +2289,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">hypercoast</span><span class="o">.</span><span class="n">download_emit</span><span class="p">(</span><span class="n">results</span><span class="p">[:</span><span class="mi">2</span><span class="p">],</span> <span class="n">out_dir</span><span class="o">=</span><span class="s2">"data"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-9">hypercoast.download_emit(results[:2], out_dir="data")</div>
+<div class="clipboard-copy-txt" id="cell-17">hypercoast.download_emit(results[:2], out_dir="data")</div>
 </div>
 </div>
 </div>
@@ -1928,7 +2315,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-10">
+<clipboard-copy for="cell-18">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -1945,7 +2332,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
     <span class="n">return_gdf</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-10">results, gdf = hypercoast.search_ecostress(
+<div class="clipboard-copy-txt" id="cell-18">results, gdf = hypercoast.search_ecostress(
     bbox=(-120.522, 34.4266, -120.2665, 34.5653),
     temporal=("2023-04-01", "2023-04-02"),
     count=-1,  # use -1 to return all datasets
@@ -1965,7 +2352,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-11">
+<clipboard-copy for="cell-19">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -1977,7 +2364,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gdf</span><span class="o">.</span><span class="n">explore</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-11">gdf.explore()</div>
+<div class="clipboard-copy-txt" id="cell-19">gdf.explore()</div>
 </div>
 </div>
 </div>
@@ -1992,7 +2379,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-12">
+<clipboard-copy for="cell-20">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2004,7 +2391,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">hypercoast</span><span class="o">.</span><span class="n">download_ecostress</span><span class="p">(</span><span class="n">results</span><span class="p">[:</span><span class="mi">5</span><span class="p">],</span> <span class="n">out_dir</span><span class="o">=</span><span class="s2">"data"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-12">hypercoast.download_ecostress(results[:5], out_dir="data")</div>
+<div class="clipboard-copy-txt" id="cell-20">hypercoast.download_ecostress(results[:5], out_dir="data")</div>
 </div>
 </div>
 </div>
@@ -2030,7 +2417,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-13">
+<clipboard-copy for="cell-21">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2044,7 +2431,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="n">m</span><span class="o">.</span><span class="n">search_pace</span><span class="p">()</span>
 <span class="n">m</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-13">m = hypercoast.Map(center=[27.25, -83.05], zoom=6)
+<div class="clipboard-copy-txt" id="cell-21">m = hypercoast.Map(center=[27.25, -83.05], zoom=6)
 m.search_pace()
 m</div>
 </div>
@@ -2061,7 +2448,7 @@ m</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-14">
+<clipboard-copy for="cell-22">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2073,7 +2460,7 @@ m</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># m._NASA_DATA_GDF.head()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-14"># m._NASA_DATA_GDF.head()</div>
+<div class="clipboard-copy-txt" id="cell-22"># m._NASA_DATA_GDF.head()</div>
 </div>
 </div>
 </div>
@@ -2088,7 +2475,7 @@ m</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-15">
+<clipboard-copy for="cell-23">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2100,7 +2487,7 @@ m</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># hypercoast.download_pace(m._NASA_DATA_RESULTS[:2], out_dir="data")</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-15"># hypercoast.download_pace(m._NASA_DATA_RESULTS[:2], out_dir="data")</div>
+<div class="clipboard-copy-txt" id="cell-23"># hypercoast.download_pace(m._NASA_DATA_RESULTS[:2], out_dir="data")</div>
 </div>
 </div>
 </div>
@@ -2126,7 +2513,7 @@ m</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-16">
+<clipboard-copy for="cell-24">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2140,7 +2527,7 @@ m</div>
 <span class="n">m</span><span class="o">.</span><span class="n">search_emit</span><span class="p">()</span>
 <span class="n">m</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-16">m = hypercoast.Map(center=[27.25, -83.05], zoom=6)
+<div class="clipboard-copy-txt" id="cell-24">m = hypercoast.Map(center=[27.25, -83.05], zoom=6)
 m.search_emit()
 m</div>
 </div>
@@ -2157,7 +2544,7 @@ m</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-17">
+<clipboard-copy for="cell-25">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2169,7 +2556,7 @@ m</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># m._NASA_DATA_GDF.head()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-17"># m._NASA_DATA_GDF.head()</div>
+<div class="clipboard-copy-txt" id="cell-25"># m._NASA_DATA_GDF.head()</div>
 </div>
 </div>
 </div>
@@ -2184,7 +2571,7 @@ m</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-18">
+<clipboard-copy for="cell-26">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2196,7 +2583,7 @@ m</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># hypercoast.download_emit(m._NASA_DATA_RESULTS[:2], out_dir="data")</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-18"># hypercoast.download_emit(m._NASA_DATA_RESULTS[:2], out_dir="data")</div>
+<div class="clipboard-copy-txt" id="cell-26"># hypercoast.download_emit(m._NASA_DATA_RESULTS[:2], out_dir="data")</div>
 </div>
 </div>
 </div>
@@ -2222,7 +2609,7 @@ m</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-19">
+<clipboard-copy for="cell-27">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2236,7 +2623,7 @@ m</div>
 <span class="n">m</span><span class="o">.</span><span class="n">search_ecostress</span><span class="p">()</span>
 <span class="n">m</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-19">m = hypercoast.Map(center=[34.5014, -120.4032], zoom=11)
+<div class="clipboard-copy-txt" id="cell-27">m = hypercoast.Map(center=[34.5014, -120.4032], zoom=11)
 m.search_ecostress()
 m</div>
 </div>
@@ -2253,7 +2640,7 @@ m</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-20">
+<clipboard-copy for="cell-28">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2265,7 +2652,7 @@ m</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># m._NASA_DATA_GDF.head()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-20"># m._NASA_DATA_GDF.head()</div>
+<div class="clipboard-copy-txt" id="cell-28"># m._NASA_DATA_GDF.head()</div>
 </div>
 </div>
 </div>
@@ -2280,7 +2667,7 @@ m</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-21">
+<clipboard-copy for="cell-29">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2292,7 +2679,7 @@ m</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># hypercoast.download_ecostress(m._NASA_DATA_RESULTS[:2], out_dir="data")</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-21"># hypercoast.download_ecostress(m._NASA_DATA_RESULTS[:2], out_dir="data")</div>
+<div class="clipboard-copy-txt" id="cell-29"># hypercoast.download_ecostress(m._NASA_DATA_RESULTS[:2], out_dir="data")</div>
 </div>
 </div>
 </div>
@@ -2328,7 +2715,7 @@ m</div>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-06-01T22:46:06+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-06-01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-06-30T02:31:52+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-06-30</span>
   </span>
 
     
